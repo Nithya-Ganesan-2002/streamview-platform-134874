@@ -2,6 +2,38 @@
 
 This project provides a minimal React template with a clean, modern UI and minimal dependencies.
 
+---
+
+## Video App Frontend (YouTube-like) Structure
+
+Main features:  
+- Header with search bar, user auth
+- Sidebar navigation (trending, subscriptions, etc.)
+- Video grid/list main content
+- Video detail page (player, comments)
+- Auth (login/signup via Firebase)
+- Stubs for video upload, playback, comment, like/dislike
+
+The app uses RESTful backend APIs (see `REACT_APP_API_BASE_URL` in `.env.example`)  
+Firebase secrets must be configured via environment variables (`REACT_APP_FIREBASE_...`).
+
+Colors:
+- Primary: #FF0000
+- Secondary: #282828
+- Accent: #606060
+
+All sensitive configuration (e.g. Firebase keys) must go in a `.env` file, not checked in to version control.
+
+Component tree is in `src/components/`
+
+- `Header.jsx`
+- `Sidebar.jsx`
+- `VideoGrid.jsx`
+- `VideoDetail.jsx`
+- `Auth.jsx`
+- `Upload.jsx`
+- `App.js` provides top-level routing and layout.
+
 ## Features
 
 - **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
